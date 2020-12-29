@@ -32,11 +32,9 @@ class ViewController: UIViewController, UIScrollViewDelegate
     
     let banner = MenuViewController()
     let lovebanner = LoveViewController()
-    let tdbanner = TodayViewController()
     
     @IBOutlet weak var menu: UIButton!
     @IBOutlet weak var love: UIButton!
-    @IBOutlet weak var today: UIButton!
     @IBOutlet weak var basehome: UIImageView!
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
@@ -51,12 +49,6 @@ class ViewController: UIViewController, UIScrollViewDelegate
     {
         let lovex = lovebanner.lovev()
         present(lovex, animated: true)
-    }
-    
-    @IBAction func todayclick()
-    {
-        let tdx = tdbanner.todayv()
-        present(tdx, animated: true)
     }
     
     override func viewDidLoad()
@@ -81,12 +73,11 @@ class ViewController: UIViewController, UIScrollViewDelegate
         }
         player?.play()
         player?.numberOfLoops = -1
-        player?.volume = v
         
-        if weasave == 1 {basehome.image = UIImage(named: "basehome")}
-        if weasave == 2 {basehome.image = UIImage(named: "basehomecloudy")}
-        if weasave == 3 {basehome.image = UIImage(named: "basehomerain")}
-        if weasave == 4 {basehome.image = UIImage(named: "basehomesnowy")}
+        if let v = UserDefaults.standard.object(forKey: "vlume") as? Float
+        {
+            player?.volume = v
+        }
     }
     
 }

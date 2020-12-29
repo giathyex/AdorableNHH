@@ -1,0 +1,28 @@
+//
+//  AlertViewController.swift
+//  TuAnhApp
+//
+//  Created by Gia Thy on 12/9/19.
+//  Copyright © 2019 Gia Thy. All rights reserved.
+//
+
+import UIKit
+
+class AlertViewController: UIViewController
+{
+    
+    @IBOutlet weak var Tittlelabel: UILabel!
+    
+    @IBOutlet weak var Meslabel: UILabel!
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func didtapback(_ sender: Any)
+    {
+    }
+    
+
+}

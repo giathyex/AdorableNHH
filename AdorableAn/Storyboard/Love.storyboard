@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Love View Controller-->
         <scene sceneID="Idx-V7-inV">
             <objects>
-                <viewController storyboardIdentifier="LoveVC" id="eQ2-bK-Zo0" customClass="LoveViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoveVC" id="eQ2-bK-Zo0" customClass="LoveViewController" customModule="ThienAnHome" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="33d-JA-ivf">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
                                     <constraint firstAttribute="height" constant="48" id="1iy-uF-s4r"/>
                                     <constraint firstAttribute="width" constant="87" id="1oh-5X-p4v"/>
                                 </constraints>
-                                <state key="normal" image="upset"/>
+                                <state key="normal" title="Button" image="upset"/>
                                 <connections>
                                     <action selector="noclick" destination="eQ2-bK-Zo0" eventType="touchUpInside" id="WKP-ZI-Cww"/>
                                     <action selector="upsetclick" destination="eQ2-bK-Zo0" eventType="touchUpInside" id="gdg-ao-ugP"/>
@@ -76,7 +76,7 @@
                                     <constraint firstAttribute="width" constant="87" id="Lw2-iu-FcA"/>
                                     <constraint firstAttribute="height" constant="48" id="Xat-hI-S7C"/>
                                 </constraints>
-                                <state key="normal" image="yes"/>
+                                <state key="normal" title="Button" image="yes"/>
                                 <connections>
                                     <action selector="yesclick" destination="eQ2-bK-Zo0" eventType="touchUpInside" id="uIy-u7-nY5"/>
                                 </connections>
@@ -87,7 +87,7 @@
                                     <constraint firstAttribute="width" constant="87" id="Pdd-40-sGi"/>
                                     <constraint firstAttribute="height" constant="48" id="pZT-WT-BnM"/>
                                 </constraints>
-                                <state key="normal" image="no"/>
+                                <state key="normal" title="Button" image="no"/>
                                 <connections>
                                     <action selector="noclick" destination="eQ2-bK-Zo0" eventType="touchUpInside" id="8oR-Up-znD"/>
                                 </connections>
@@ -98,7 +98,7 @@
                                     <constraint firstAttribute="height" constant="61" id="bsM-SO-cS0"/>
                                     <constraint firstAttribute="width" constant="61" id="iR2-Kc-Sku"/>
                                 </constraints>
-                                <state key="normal" image="love button"/>
+                                <state key="normal" title="Button" image="love button"/>
                                 <connections>
                                     <action selector="iconhistoryclick" destination="eQ2-bK-Zo0" eventType="touchUpInside" id="R6o-bP-hoz"/>
                                 </connections>
@@ -147,7 +147,6 @@
                                     <constraint firstAttribute="height" constant="34" id="OZo-dw-N3W"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>

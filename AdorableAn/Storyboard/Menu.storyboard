@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Menu View Controller-->
         <scene sceneID="ld8-Sg-oVc">
             <objects>
-                <viewController storyboardIdentifier="MenuVC" id="6aL-h1-XIf" customClass="MenuViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuVC" id="6aL-h1-XIf" customClass="MenuViewController" customModule="Adorable_Ân" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vtB-3O-dvc">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="width" constant="65" id="94I-iH-JP4"/>
                                     <constraint firstAttribute="height" constant="65" id="RVB-Z3-xmd"/>
                                 </constraints>
-                                <state key="normal" image="makeup"/>
+                                <state key="normal" title="Button" image="makeup"/>
                                 <connections>
                                     <action selector="wardrobeclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="7ku-VC-xue"/>
                                 </connections>
@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="width" constant="65" id="jhi-p5-q47"/>
                                     <constraint firstAttribute="height" constant="65" id="wjb-3C-qgm"/>
                                 </constraints>
-                                <state key="normal" image="kitchen"/>
+                                <state key="normal" title="Button" image="kitchen"/>
                                 <connections>
                                     <action selector="kitchenclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="FQz-7a-IIp"/>
                                 </connections>
@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="height" constant="65" id="UyF-FR-y3J"/>
                                     <constraint firstAttribute="width" constant="65" id="go1-Du-FBd"/>
                                 </constraints>
-                                <state key="normal" image="info"/>
+                                <state key="normal" title="Button" image="info"/>
                                 <connections>
                                     <action selector="infoclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="RNQ-AF-wby"/>
                                 </connections>
@@ -59,7 +59,7 @@
                                     <constraint firstAttribute="height" constant="65" id="D1n-Sp-zSv"/>
                                     <constraint firstAttribute="width" constant="65" id="vBS-p1-1HY"/>
                                 </constraints>
-                                <state key="normal" image="memory"/>
+                                <state key="normal" title="Button" image="memory"/>
                                 <connections>
                                     <action selector="memoryclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="dNx-xL-9dW"/>
                                 </connections>
@@ -70,7 +70,7 @@
                                     <constraint firstAttribute="width" constant="65" id="3p0-X6-wWK"/>
                                     <constraint firstAttribute="height" constant="65" id="VDO-si-zGW"/>
                                 </constraints>
-                                <state key="normal" image="store"/>
+                                <state key="normal" title="Button" image="store"/>
                                 <connections>
                                     <action selector="storeclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="GgU-LK-b0Y"/>
                                 </connections>
@@ -81,7 +81,7 @@
                                     <constraint firstAttribute="width" constant="65" id="4UD-Ch-prb"/>
                                     <constraint firstAttribute="height" constant="65" id="Rn6-rT-LXG"/>
                                 </constraints>
-                                <state key="normal" image="living room"/>
+                                <state key="normal" title="Button" image="living room"/>
                                 <connections>
                                     <action selector="livingclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="92S-m6-8BR"/>
                                 </connections>
@@ -92,7 +92,7 @@
                                     <constraint firstAttribute="width" constant="65" id="Bti-hd-IhU"/>
                                     <constraint firstAttribute="height" constant="65" id="hij-Fz-5GP"/>
                                 </constraints>
-                                <state key="normal" image="bed room"/>
+                                <state key="normal" title="Button" image="bed room"/>
                                 <connections>
                                     <action selector="bedroomclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="JVC-zD-qAb"/>
                                 </connections>
@@ -103,7 +103,7 @@
                                     <constraint firstAttribute="width" constant="65" id="Xzf-R9-z7e"/>
                                     <constraint firstAttribute="height" constant="65" id="dvb-dM-rD5"/>
                                 </constraints>
-                                <state key="normal" image="garden"/>
+                                <state key="normal" title="Button" image="garden"/>
                                 <connections>
                                     <action selector="gardenclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="JGP-kh-76J"/>
                                 </connections>
@@ -114,7 +114,7 @@
                                     <constraint firstAttribute="height" constant="65" id="xqs-tJ-v5V"/>
                                     <constraint firstAttribute="width" constant="65" id="zE5-rV-5it"/>
                                 </constraints>
-                                <state key="normal" image="garage"/>
+                                <state key="normal" title="Button" image="garage"/>
                                 <connections>
                                     <action selector="garageclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="LdM-Vm-aQE"/>
                                 </connections>
@@ -167,15 +167,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bed room" width="90" height="90"/>
-        <image name="garage" width="90" height="90"/>
-        <image name="garden" width="90" height="90"/>
-        <image name="info" width="90" height="90"/>
-        <image name="kitchen" width="90" height="90"/>
-        <image name="living room" width="90" height="90"/>
-        <image name="makeup" width="90" height="90"/>
-        <image name="memory" width="90" height="90"/>
-        <image name="menu banner" width="640" height="360"/>
-        <image name="store" width="90" height="90"/>
+        <image name="bed room" width="540" height="540"/>
+        <image name="garage" width="481" height="481.5"/>
+        <image name="garden" width="540" height="540"/>
+        <image name="info" width="454.5" height="454.5"/>
+        <image name="kitchen" width="540" height="540"/>
+        <image name="living room" width="540" height="540"/>
+        <image name="makeup" width="525.5" height="525.5"/>
+        <image name="memory" width="525.5" height="525.5"/>
+        <image name="menu banner" width="960" height="540"/>
+        <image name="store" width="454.5" height="454.5"/>
     </resources>
 </document>

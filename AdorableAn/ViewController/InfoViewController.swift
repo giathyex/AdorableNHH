@@ -36,7 +36,10 @@ class InfoViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        slidevol.value = v
+        if let vcv = UserDefaults.standard.object(forKey: "vlume") as? Float
+        {
+            slidevol.value = vcv
+        }
     }
     
     func info() -> InfoViewController

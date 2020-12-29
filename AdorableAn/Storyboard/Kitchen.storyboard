@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kitchen View Controller-->
+        <scene sceneID="LXn-9W-2p5">
+            <objects>
+                <viewController storyboardIdentifier="KitchenVC" id="gLY-Cx-86Y" customClass="KitchenViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gQw-Nw-LQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen base" translatesAutoresizingMaskIntoConstraints="NO" id="t9u-pV-Dpq">
+                                <rect key="frame" x="0.0" y="0.0" width="812.5" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="t9u-pV-Dpq" secondAttribute="height" multiplier="19.5:9" id="jCe-rm-FAh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDO-h7-45I">
+                                <rect key="frame" x="596" y="10" width="61" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="maq-En-xK8"/>
+                                    <constraint firstAttribute="height" constant="61" id="p4x-hU-0Cd"/>
+                                </constraints>
+                                <state key="normal" image="menu button"/>
+                                <connections>
+                                    <action selector="menukclick" destination="gLY-Cx-86Y" eventType="touchUpInside" id="E11-eM-myj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EDO-h7-45I" firstAttribute="top" secondItem="gQw-Nw-LQ3" secondAttribute="top" constant="10" id="QGV-h6-RU2"/>
+                            <constraint firstAttribute="bottom" secondItem="t9u-pV-Dpq" secondAttribute="bottom" id="UQP-Zg-tPd"/>
+                            <constraint firstItem="t9u-pV-Dpq" firstAttribute="leading" secondItem="gQw-Nw-LQ3" secondAttribute="leading" id="ZR0-r0-Aan"/>
+                            <constraint firstItem="JKg-ie-NAS" firstAttribute="trailing" secondItem="EDO-h7-45I" secondAttribute="trailing" constant="10" id="j1w-MH-rSd"/>
+                            <constraint firstItem="t9u-pV-Dpq" firstAttribute="top" secondItem="gQw-Nw-LQ3" secondAttribute="top" id="mS9-BN-lS3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JKg-ie-NAS"/>
+                    </view>
+                    <connections>
+                        <outlet property="kitchenbase" destination="t9u-pV-Dpq" id="4BJ-zw-9xS"/>
+                        <outlet property="menuk" destination="EDO-h7-45I" id="9gG-qy-dH2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZ0-f7-EhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kitchen base" width="780" height="360"/>
+        <image name="menu button" width="90" height="90"/>
+    </resources>
+</document>

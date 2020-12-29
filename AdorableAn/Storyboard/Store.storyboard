@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Store View Controller-->
+        <scene sceneID="4Kp-ma-zPl">
+            <objects>
+                <viewController storyboardIdentifier="StoreVC" id="fSh-Zi-TFB" customClass="StoreViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OJ9-se-9Cj">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF5-Je-vLH">
+                                <rect key="frame" x="596" y="10" width="61" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="8Im-WK-Qg4"/>
+                                    <constraint firstAttribute="width" constant="61" id="WqR-VN-IVZ"/>
+                                </constraints>
+                                <state key="normal" image="menu button"/>
+                                <connections>
+                                    <action selector="menustrclick" destination="fSh-Zi-TFB" eventType="touchUpInside" id="avG-iU-xae"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UF5-Je-vLH" firstAttribute="top" secondItem="OJ9-se-9Cj" secondAttribute="top" constant="10" id="Ko4-UG-Wnw"/>
+                            <constraint firstItem="hsT-YQ-Xu5" firstAttribute="trailing" secondItem="UF5-Je-vLH" secondAttribute="trailing" constant="10" id="w7v-uQ-b1u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hsT-YQ-Xu5"/>
+                    </view>
+                    <connections>
+                        <outlet property="menustr" destination="UF5-Je-vLH" id="pio-jk-0p7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1S-72-JPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu button" width="90" height="90"/>
+    </resources>
+</document>

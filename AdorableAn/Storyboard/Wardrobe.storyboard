@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wardrobe View Controller-->
+        <scene sceneID="7hL-aU-9r3">
+            <objects>
+                <viewController storyboardIdentifier="WardrobeVC" id="uCY-Mv-S0n" customClass="WardrobeViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EAq-Ji-2Bk">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wardrobe base" translatesAutoresizingMaskIntoConstraints="NO" id="2g9-Be-3lH">
+                                <rect key="frame" x="0.0" y="0.0" width="812.5" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2g9-Be-3lH" secondAttribute="height" multiplier="19.5:9" id="Erm-eV-r4I"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apE-vq-gx3">
+                                <rect key="frame" x="596" y="10" width="61" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="0WA-aS-nNB"/>
+                                    <constraint firstAttribute="width" constant="61" id="Amd-ig-D2c"/>
+                                </constraints>
+                                <state key="normal" image="menu button"/>
+                                <connections>
+                                    <action selector="menuwaclick" destination="uCY-Mv-S0n" eventType="touchUpInside" id="6ge-oi-bLs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2g9-Be-3lH" firstAttribute="leading" secondItem="EAq-Ji-2Bk" secondAttribute="leading" id="7Pi-mY-9Sh"/>
+                            <constraint firstItem="apE-vq-gx3" firstAttribute="top" secondItem="EAq-Ji-2Bk" secondAttribute="top" constant="10" id="Dyw-t8-wYk"/>
+                            <constraint firstItem="2g9-Be-3lH" firstAttribute="top" secondItem="EAq-Ji-2Bk" secondAttribute="top" id="ITc-0Q-rQd"/>
+                            <constraint firstAttribute="bottom" secondItem="2g9-Be-3lH" secondAttribute="bottom" id="Lwr-v9-2yL"/>
+                            <constraint firstItem="bqT-vE-GGs" firstAttribute="trailing" secondItem="apE-vq-gx3" secondAttribute="trailing" constant="10" id="z7t-oX-puy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bqT-vE-GGs"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuwa" destination="apE-vq-gx3" id="oF5-OU-n9w"/>
+                        <outlet property="wardrobebase" destination="2g9-Be-3lH" id="xXU-Xr-O7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pb-px-Q4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu button" width="90" height="90"/>
+        <image name="wardrobe base" width="780" height="360"/>
+    </resources>
+</document>

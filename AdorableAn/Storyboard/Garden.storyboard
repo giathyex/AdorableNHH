@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Garden View Controller-->
+        <scene sceneID="mZz-6S-17q">
+            <objects>
+                <viewController storyboardIdentifier="GardenVC" id="3ju-fx-sim" customClass="GardenViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tqu-2g-6Jl">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garden base" translatesAutoresizingMaskIntoConstraints="NO" id="jvV-LX-yLk">
+                                <rect key="frame" x="0.0" y="0.0" width="812.5" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jvV-LX-yLk" secondAttribute="height" multiplier="19.5:9" id="Q25-fF-riU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp1-rE-X4D">
+                                <rect key="frame" x="596" y="10" width="61" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="Geu-jm-YRp"/>
+                                    <constraint firstAttribute="height" constant="61" id="Hmo-w4-e3L"/>
+                                </constraints>
+                                <state key="normal" image="menu button"/>
+                                <connections>
+                                    <action selector="menugclick" destination="3ju-fx-sim" eventType="touchUpInside" id="KlB-ds-0ir"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yYD-08-L1v" firstAttribute="trailing" secondItem="Jp1-rE-X4D" secondAttribute="trailing" constant="10" id="0jq-uX-zfA"/>
+                            <constraint firstItem="Jp1-rE-X4D" firstAttribute="top" secondItem="tqu-2g-6Jl" secondAttribute="top" constant="10" id="NQA-0u-DQj"/>
+                            <constraint firstItem="jvV-LX-yLk" firstAttribute="top" secondItem="tqu-2g-6Jl" secondAttribute="top" id="Naa-09-uWO"/>
+                            <constraint firstAttribute="bottom" secondItem="jvV-LX-yLk" secondAttribute="bottom" id="aL8-yy-y7f"/>
+                            <constraint firstItem="jvV-LX-yLk" firstAttribute="leading" secondItem="tqu-2g-6Jl" secondAttribute="leading" id="zQK-bt-o5Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yYD-08-L1v"/>
+                    </view>
+                    <connections>
+                        <outlet property="gardenbase" destination="jvV-LX-yLk" id="QBp-Qu-Ztg"/>
+                        <outlet property="menug" destination="Jp1-rE-X4D" id="N3t-Kc-LSR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oyy-Vi-teT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="garden base" width="780" height="360"/>
+        <image name="menu button" width="90" height="90"/>
+    </resources>
+</document>

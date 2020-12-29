@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Garage View Controller-->
+        <scene sceneID="qge-P9-Pbp">
+            <objects>
+                <viewController storyboardIdentifier="GarageVC" id="yUs-pu-Gfb" customClass="GarageViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R8w-Aw-M84">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garage base" translatesAutoresizingMaskIntoConstraints="NO" id="ZHk-GQ-Elv">
+                                <rect key="frame" x="0.0" y="0.0" width="812.5" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZHk-GQ-Elv" secondAttribute="height" multiplier="19.5:9" id="TTX-T8-qyY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nM9-zJ-jaw">
+                                <rect key="frame" x="596" y="10" width="61" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="6U8-k5-XFq"/>
+                                    <constraint firstAttribute="width" constant="61" id="T31-js-grQ"/>
+                                </constraints>
+                                <state key="normal" image="menu button"/>
+                                <connections>
+                                    <action selector="menugrclick" destination="yUs-pu-Gfb" eventType="touchUpInside" id="uYv-To-vwp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rIg-3a-y06" firstAttribute="trailing" secondItem="nM9-zJ-jaw" secondAttribute="trailing" constant="10" id="I8s-mG-DuQ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZHk-GQ-Elv" secondAttribute="bottom" id="NAA-jz-mRj"/>
+                            <constraint firstItem="ZHk-GQ-Elv" firstAttribute="top" secondItem="R8w-Aw-M84" secondAttribute="top" id="bM5-mo-Rqe"/>
+                            <constraint firstItem="ZHk-GQ-Elv" firstAttribute="leading" secondItem="R8w-Aw-M84" secondAttribute="leading" id="g7n-E0-Zug"/>
+                            <constraint firstItem="nM9-zJ-jaw" firstAttribute="top" secondItem="R8w-Aw-M84" secondAttribute="top" constant="10" id="iAr-a8-Pzk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rIg-3a-y06"/>
+                    </view>
+                    <connections>
+                        <outlet property="garagebase" destination="ZHk-GQ-Elv" id="4nr-v4-JBx"/>
+                        <outlet property="menugr" destination="nM9-zJ-jaw" id="YkN-VG-4Of"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8n-8Y-HS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="garage base" width="780" height="360"/>
+        <image name="menu button" width="90" height="90"/>
+    </resources>
+</document>

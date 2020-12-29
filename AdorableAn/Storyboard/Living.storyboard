@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Living View Controller-->
+        <scene sceneID="fOO-mC-PcW">
+            <objects>
+                <viewController storyboardIdentifier="LivingVC" id="YY5-sg-u6J" customClass="LivingViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zT5-0k-dn0">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="living room base" translatesAutoresizingMaskIntoConstraints="NO" id="0Vd-z0-CB4">
+                                <rect key="frame" x="0.0" y="0.0" width="812.5" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Vd-z0-CB4" secondAttribute="height" multiplier="19.5:9" id="ddr-Vk-c1y"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl7-If-UOZ">
+                                <rect key="frame" x="596" y="10" width="61" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="KkA-DA-idi"/>
+                                    <constraint firstAttribute="height" constant="61" id="PdW-9e-fu6"/>
+                                </constraints>
+                                <state key="normal" image="menu button"/>
+                                <connections>
+                                    <action selector="menulclick" destination="YY5-sg-u6J" eventType="touchUpInside" id="mat-xV-xCv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="1" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Vd-z0-CB4" firstAttribute="leading" secondItem="zT5-0k-dn0" secondAttribute="leading" id="9s0-Sy-56l"/>
+                            <constraint firstItem="0Vd-z0-CB4" firstAttribute="top" secondItem="zT5-0k-dn0" secondAttribute="top" id="VR7-wQ-nQu"/>
+                            <constraint firstItem="Jl7-If-UOZ" firstAttribute="top" secondItem="zT5-0k-dn0" secondAttribute="top" constant="10" id="ecd-AY-yTW"/>
+                            <constraint firstItem="ZhC-Qt-237" firstAttribute="trailing" secondItem="Jl7-If-UOZ" secondAttribute="trailing" constant="10" id="hBE-Y7-exv"/>
+                            <constraint firstAttribute="bottom" secondItem="0Vd-z0-CB4" secondAttribute="bottom" id="uze-ai-d3g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZhC-Qt-237"/>
+                    </view>
+                    <connections>
+                        <outlet property="livingbase" destination="0Vd-z0-CB4" id="4EL-zI-gce"/>
+                        <outlet property="menul" destination="Jl7-If-UOZ" id="kLa-t3-avG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6N-ZF-cHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.67466266866569" y="39.200000000000003"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="living room base" width="780" height="360"/>
+        <image name="menu button" width="90" height="90"/>
+    </resources>
+</document>

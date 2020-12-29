@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info View Controller-->
+        <scene sceneID="6b4-O1-4d7">
+            <objects>
+                <viewController storyboardIdentifier="InfoVC" id="7dA-we-JDz" customClass="InfoViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yCE-pn-afQ">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJh-wP-REh">
+                                <rect key="frame" x="596" y="10" width="61" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="KS6-PI-34K"/>
+                                    <constraint firstAttribute="height" constant="61" id="pqL-FE-uJW"/>
+                                </constraints>
+                                <state key="normal" image="menu button"/>
+                                <connections>
+                                    <action selector="menuifclick" destination="7dA-we-JDz" eventType="touchUpInside" id="Jn9-zN-dsH"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-fJ-3iF">
+                                <rect key="frame" x="68" y="131" width="531" height="30"/>
+                                <color key="tintColor" red="1" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="8zp-K7-Op1"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="1" green="0.58434739545826075" blue="0.54857695271634388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="1" green="0.98999790731619497" blue="0.8992288904566127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.45249319333698945" blue="0.41410058504764802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="slidevol:" destination="7dA-we-JDz" eventType="valueChanged" id="Wt9-MC-fq9"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Volume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdj-uu-fCi">
+                                <rect key="frame" x="70" y="83" width="139" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="VFp-cJ-Sta"/>
+                                    <constraint firstAttribute="height" constant="32" id="dUS-DO-wum"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EJh-wP-REh" firstAttribute="top" secondItem="yCE-pn-afQ" secondAttribute="top" constant="10" id="FrH-Np-12u"/>
+                            <constraint firstItem="jdj-uu-fCi" firstAttribute="top" secondItem="yCE-pn-afQ" secondAttribute="topMargin" constant="83" id="Pda-xM-4fM"/>
+                            <constraint firstItem="EII-ao-Y1z" firstAttribute="trailing" secondItem="Kav-fJ-3iF" secondAttribute="trailing" constant="70" id="Qwn-gx-fmT"/>
+                            <constraint firstItem="EII-ao-Y1z" firstAttribute="trailing" secondItem="EJh-wP-REh" secondAttribute="trailing" constant="10" id="Xit-yU-raq"/>
+                            <constraint firstItem="Kav-fJ-3iF" firstAttribute="leading" secondItem="EII-ao-Y1z" secondAttribute="leading" constant="70" id="cNo-Lg-wRg"/>
+                            <constraint firstItem="Kav-fJ-3iF" firstAttribute="top" secondItem="jdj-uu-fCi" secondAttribute="bottom" constant="16" id="gv6-Kk-Xyv"/>
+                            <constraint firstItem="jdj-uu-fCi" firstAttribute="leading" secondItem="EII-ao-Y1z" secondAttribute="leading" constant="70" id="uno-QM-haP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EII-ao-Y1z"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuinf" destination="EJh-wP-REh" id="lqB-a4-DLP"/>
+                        <outlet property="slidevol" destination="Kav-fJ-3iF" id="K9n-6a-9eh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ug6-31-bvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.67466266866569" y="39.200000000000003"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu button" width="90" height="90"/>
+    </resources>
+</document>

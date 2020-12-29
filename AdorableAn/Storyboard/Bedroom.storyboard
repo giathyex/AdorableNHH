@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bedroom View Controller-->
+        <scene sceneID="sI0-uO-NRi">
+            <objects>
+                <viewController storyboardIdentifier="BedroomVC" id="JRQ-7x-iYn" customClass="BedroomViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gd9-2f-mXk">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bed room base" translatesAutoresizingMaskIntoConstraints="NO" id="bHw-QF-LXX">
+                                <rect key="frame" x="0.0" y="0.0" width="812.5" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bHw-QF-LXX" secondAttribute="height" multiplier="19.5:9" id="zFa-9e-HKc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jv-JG-gGC">
+                                <rect key="frame" x="596" y="10" width="61" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="Fqr-aZ-BKf"/>
+                                    <constraint firstAttribute="width" constant="61" id="PRv-W3-vAU"/>
+                                </constraints>
+                                <state key="normal" image="menu button"/>
+                                <connections>
+                                    <action selector="menubclick" destination="JRQ-7x-iYn" eventType="touchUpInside" id="83b-sx-eAa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bHw-QF-LXX" secondAttribute="bottom" id="1wf-lO-Geq"/>
+                            <constraint firstItem="sqk-nf-ZAe" firstAttribute="trailing" secondItem="8jv-JG-gGC" secondAttribute="trailing" constant="10" id="3Vw-WN-89F"/>
+                            <constraint firstItem="bHw-QF-LXX" firstAttribute="leading" secondItem="Gd9-2f-mXk" secondAttribute="leading" id="McF-uQ-KjQ"/>
+                            <constraint firstItem="bHw-QF-LXX" firstAttribute="top" secondItem="Gd9-2f-mXk" secondAttribute="top" id="QyO-Kz-1ZZ"/>
+                            <constraint firstItem="8jv-JG-gGC" firstAttribute="top" secondItem="Gd9-2f-mXk" secondAttribute="top" constant="10" id="liE-7O-Rn5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sqk-nf-ZAe"/>
+                    </view>
+                    <connections>
+                        <outlet property="bedroombase" destination="bHw-QF-LXX" id="36r-hf-DN5"/>
+                        <outlet property="menub" destination="8jv-JG-gGC" id="924-G3-7fo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edM-XH-Ozf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bed room base" width="780" height="360"/>
+        <image name="menu button" width="90" height="90"/>
+    </resources>
+</document>

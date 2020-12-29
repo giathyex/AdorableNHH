@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="ld8-Sg-oVc">
+            <objects>
+                <viewController storyboardIdentifier="MenuVC" id="6aL-h1-XIf" customClass="MenuViewController" customModule="Thiên_Ân" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vtB-3O-dvc">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu banner" translatesAutoresizingMaskIntoConstraints="NO" id="icF-Xd-NVN">
+                                <rect key="frame" x="62" y="26" width="543" height="323"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KET-Wg-q0s">
+                                <rect key="frame" x="211" y="155" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="94I-iH-JP4"/>
+                                    <constraint firstAttribute="height" constant="65" id="RVB-Z3-xmd"/>
+                                </constraints>
+                                <state key="normal" image="makeup"/>
+                                <connections>
+                                    <action selector="wardrobeclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="7ku-VC-xue"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDb-PU-tGJ">
+                                <rect key="frame" x="106" y="155" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="jhi-p5-q47"/>
+                                    <constraint firstAttribute="height" constant="65" id="wjb-3C-qgm"/>
+                                </constraints>
+                                <state key="normal" image="kitchen"/>
+                                <connections>
+                                    <action selector="kitchenclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="FQz-7a-IIp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad5-BK-ZHo">
+                                <rect key="frame" x="316" y="235" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="UyF-FR-y3J"/>
+                                    <constraint firstAttribute="width" constant="65" id="go1-Du-FBd"/>
+                                </constraints>
+                                <state key="normal" image="info"/>
+                                <connections>
+                                    <action selector="infoclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="RNQ-AF-wby"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRy-Cb-iqC">
+                                <rect key="frame" x="211" y="235" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="D1n-Sp-zSv"/>
+                                    <constraint firstAttribute="width" constant="65" id="vBS-p1-1HY"/>
+                                </constraints>
+                                <state key="normal" image="memory"/>
+                                <connections>
+                                    <action selector="memoryclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="dNx-xL-9dW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqe-no-MB6">
+                                <rect key="frame" x="106" y="235" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="3p0-X6-wWK"/>
+                                    <constraint firstAttribute="height" constant="65" id="VDO-si-zGW"/>
+                                </constraints>
+                                <state key="normal" image="store"/>
+                                <connections>
+                                    <action selector="storeclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="GgU-LK-b0Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bx9-M9-HLG">
+                                <rect key="frame" x="106" y="75" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="4UD-Ch-prb"/>
+                                    <constraint firstAttribute="height" constant="65" id="Rn6-rT-LXG"/>
+                                </constraints>
+                                <state key="normal" image="living room"/>
+                                <connections>
+                                    <action selector="livingclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="92S-m6-8BR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13n-qc-wY6">
+                                <rect key="frame" x="316" y="75" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Bti-hd-IhU"/>
+                                    <constraint firstAttribute="height" constant="65" id="hij-Fz-5GP"/>
+                                </constraints>
+                                <state key="normal" image="bed room"/>
+                                <connections>
+                                    <action selector="bedroomclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="JVC-zD-qAb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oja-3J-qa3">
+                                <rect key="frame" x="211" y="75" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Xzf-R9-z7e"/>
+                                    <constraint firstAttribute="height" constant="65" id="dvb-dM-rD5"/>
+                                </constraints>
+                                <state key="normal" image="garden"/>
+                                <connections>
+                                    <action selector="gardenclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="JGP-kh-76J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOo-8D-5Om">
+                                <rect key="frame" x="316" y="155" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="xqs-tJ-v5V"/>
+                                    <constraint firstAttribute="width" constant="65" id="zE5-rV-5it"/>
+                                </constraints>
+                                <state key="normal" image="garage"/>
+                                <connections>
+                                    <action selector="garageclick" destination="6aL-h1-XIf" eventType="touchUpInside" id="LdM-Vm-aQE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KET-Wg-q0s" firstAttribute="leading" secondItem="lDb-PU-tGJ" secondAttribute="trailing" constant="40" id="2UH-6O-ai2"/>
+                            <constraint firstItem="lDb-PU-tGJ" firstAttribute="centerY" secondItem="vtB-3O-dvc" secondAttribute="centerY" id="4ms-dO-Mzh"/>
+                            <constraint firstItem="SOo-8D-5Om" firstAttribute="top" secondItem="13n-qc-wY6" secondAttribute="bottom" constant="15" id="5Eu-fw-2dV"/>
+                            <constraint firstItem="icF-Xd-NVN" firstAttribute="leading" secondItem="vtB-3O-dvc" secondAttribute="leadingMargin" constant="42" id="9bM-k6-2aN"/>
+                            <constraint firstItem="KET-Wg-q0s" firstAttribute="centerY" secondItem="vtB-3O-dvc" secondAttribute="centerY" id="9nf-tB-CXF"/>
+                            <constraint firstItem="13n-qc-wY6" firstAttribute="centerX" secondItem="vtB-3O-dvc" secondAttribute="centerX" constant="15" id="Aim-jU-AgF"/>
+                            <constraint firstItem="PRy-Cb-iqC" firstAttribute="top" secondItem="KET-Wg-q0s" secondAttribute="bottom" constant="15" id="E1H-bW-1GR"/>
+                            <constraint firstItem="13n-qc-wY6" firstAttribute="leading" secondItem="oja-3J-qa3" secondAttribute="trailing" constant="40" id="FGT-p3-ceH"/>
+                            <constraint firstItem="SOo-8D-5Om" firstAttribute="centerX" secondItem="vtB-3O-dvc" secondAttribute="centerX" constant="15" id="NsD-EK-2P2"/>
+                            <constraint firstItem="oja-3J-qa3" firstAttribute="leading" secondItem="Bx9-M9-HLG" secondAttribute="trailing" constant="40" id="Opn-XP-7Aj"/>
+                            <constraint firstItem="lDb-PU-tGJ" firstAttribute="top" secondItem="Bx9-M9-HLG" secondAttribute="bottom" constant="15" id="SNv-fd-5TE"/>
+                            <constraint firstItem="ad5-BK-ZHo" firstAttribute="centerX" secondItem="vtB-3O-dvc" secondAttribute="centerX" constant="15" id="aAh-Du-wEX"/>
+                            <constraint firstItem="aqe-no-MB6" firstAttribute="top" secondItem="lDb-PU-tGJ" secondAttribute="bottom" constant="15" id="eIh-vt-OMb"/>
+                            <constraint firstItem="SOo-8D-5Om" firstAttribute="centerY" secondItem="vtB-3O-dvc" secondAttribute="centerY" id="jAl-wa-6ud"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="icF-Xd-NVN" secondAttribute="bottom" constant="26" id="lD9-uw-9hT"/>
+                            <constraint firstItem="ad5-BK-ZHo" firstAttribute="top" secondItem="SOo-8D-5Om" secondAttribute="bottom" constant="15" id="olR-ig-Ils"/>
+                            <constraint firstItem="icF-Xd-NVN" firstAttribute="top" secondItem="vtB-3O-dvc" secondAttribute="topMargin" constant="26" id="pk1-jf-6Kf"/>
+                            <constraint firstItem="ad5-BK-ZHo" firstAttribute="leading" secondItem="PRy-Cb-iqC" secondAttribute="trailing" constant="40" id="r16-3l-sAu"/>
+                            <constraint firstItem="PRy-Cb-iqC" firstAttribute="leading" secondItem="aqe-no-MB6" secondAttribute="trailing" constant="40" id="rFA-Zd-BrO"/>
+                            <constraint firstItem="KET-Wg-q0s" firstAttribute="top" secondItem="oja-3J-qa3" secondAttribute="bottom" constant="15" id="y9y-ad-hns"/>
+                            <constraint firstItem="SOo-8D-5Om" firstAttribute="leading" secondItem="KET-Wg-q0s" secondAttribute="trailing" constant="40" id="zEY-qw-BWc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="icF-Xd-NVN" secondAttribute="trailing" constant="42" id="zWu-qL-hZ7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tly-x7-hPv"/>
+                    </view>
+                    <connections>
+                        <outlet property="banner" destination="icF-Xd-NVN" id="5af-vh-7TR"/>
+                        <outlet property="bedroom" destination="13n-qc-wY6" id="g3s-zb-iww"/>
+                        <outlet property="garage" destination="SOo-8D-5Om" id="8Rb-OJ-9ea"/>
+                        <outlet property="garden" destination="oja-3J-qa3" id="Ffw-Sf-6Bs"/>
+                        <outlet property="info" destination="ad5-BK-ZHo" id="GHF-JE-nvU"/>
+                        <outlet property="kitchen" destination="lDb-PU-tGJ" id="0Dr-xf-Khg"/>
+                        <outlet property="living" destination="Bx9-M9-HLG" id="jKn-gY-mMf"/>
+                        <outlet property="memory" destination="PRy-Cb-iqC" id="swY-cm-Y0b"/>
+                        <outlet property="store" destination="aqe-no-MB6" id="ffw-gp-rIK"/>
+                        <outlet property="wardrobe" destination="KET-Wg-q0s" id="Sum-aZ-g6w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7o6-ax-BN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-289.20539730134936" y="-64.799999999999997"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bed room" width="90" height="90"/>
+        <image name="garage" width="90" height="90"/>
+        <image name="garden" width="90" height="90"/>
+        <image name="info" width="90" height="90"/>
+        <image name="kitchen" width="90" height="90"/>
+        <image name="living room" width="90" height="90"/>
+        <image name="makeup" width="90" height="90"/>
+        <image name="memory" width="90" height="90"/>
+        <image name="menu banner" width="640" height="360"/>
+        <image name="store" width="90" height="90"/>
+    </resources>
+</document>

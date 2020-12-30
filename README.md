@@ -1,5 +1,5 @@
-# AdorableNHH
-# a.k.a.. NHHH2
+# NHHH2
+# a.k.a.. AdorableNHHH
 A cute little "Adorable Home inspired" app for my beloved NHH girl 
 
 From Trần Đình Gia Hải <br />

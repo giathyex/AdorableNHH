@@ -30,6 +30,4 @@ Be strong, take care <br />
   <br>
 </p>
 
-To try this app, extract Demo.rar and run the .exe file
-
 N Performance <br />

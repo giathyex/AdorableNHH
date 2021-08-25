@@ -8,25 +8,25 @@ Be strong, take care <br />
 
 <p align="center">
   <br>
-  <img src="Demo_Picture/1.PNG">
+  <img src="Demo_Picture/1.png">
   <br>
-  <img src="Demo_Picture/2.PNG">
+  <img src="Demo_Picture/2.png">
   <br>
-  <img src="Demo_Picture/3.PNG">
+  <img src="Demo_Picture/3.png">
   <br>
-  <img src="Demo_Picture/4.PNG">
+  <img src="Demo_Picture/4.png">
   <br>
-  <img src="Demo_Picture/5.PNG">
+  <img src="Demo_Picture/5.png">
   <br>
-  <img src="Demo_Picture/6.PNG">
+  <img src="Demo_Picture/6.png">
   <br>
-  <img src="Demo_Picture/7.PNG">
+  <img src="Demo_Picture/7.png">
   <br>
-  <img src="Demo_Picture/8.PNG">
+  <img src="Demo_Picture/8.png">
   <br>
-  <img src="Demo_Picture/9.PNG">
+  <img src="Demo_Picture/9.png">
   <br>
-  <img src="Demo_Picture/10.PNG">
+  <img src="Demo_Picture/10.png">
   <br>
 </p>
 
